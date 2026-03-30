@@ -1,32 +1,54 @@
 ---
-title: Anesthesia SmartSite won't load
-description: Quick fix for loading errors on Anesthesia SmartSite.
+title: Page Won't Load
+description: Troubleshoot page loading errors on Anesthesia SmartSite, including browser issues, network problems, and institutional firewall considerations.
 ---
 
 ## Symptoms
 
-- Homepage does not load
-- Error: "Page could not be displayed"
+- The page displays a blank screen or loading spinner that does not resolve
+- An error message appears (e.g., "Page could not be displayed," "Connection timed out")
+- Content loads partially but some elements are missing
 
-## Causes
-
-- Browser cache issue
-- Network connection interruption
-
-## Solution
+## Troubleshooting Steps
 
 <Steps>
-  <Step title="Clear browser cache">
-    ````
-    In your browser settings, clear cached files and cookies. Close and reopen your browser.
-    ````
+  <Step title="Clear Browser Cache" icon="trash">
+    Cached data can cause loading issues. Clear your browser's cache and cookies for the Anesthesia SmartSite domain, then reload the page.
   </Step>
-  <Step title="Check your connection">
-    ````bash
-    ping anesthesiasmartsite.com
-    ````
+  <Step title="Check Your Internet Connection" icon="wifi">
+    Verify your connection is active and stable. Try loading another website to confirm general internet access.
   </Step>
-  <Step title="Try a different device">
-    Log in from a mobile phone or another computer.
+  <Step title="Disable Browser Extensions" icon="sliders">
+    Ad blockers, privacy extensions, and content filters can interfere with page loading. Try disabling extensions or loading the page in an incognito/private browsing window.
+  </Step>
+  <Step title="Check Institutional Firewall" icon="shield">
+    Hospital and institutional networks may block certain web resources. If you are on an institutional network:
+
+    - Try accessing the site from a personal network or mobile data
+    - Contact your IT department to verify that anesthesiasmartsite.com and its subdomains are not blocked
+  </Step>
+  <Step title="Try a Different Browser" icon="globe">
+    Test with a different supported browser (Chrome, Firefox, Safari, or Edge). This helps determine if the issue is browser-specific.
+  </Step>
+  <Step title="Try a Different Device" icon="smartphone">
+    If the issue persists across browsers, try accessing the platform from a different device (mobile phone, tablet, or another computer).
   </Step>
 </Steps>
+
+## Common Causes
+
+| Cause | Solution |
+|-------|----------|
+| Stale browser cache | Clear cache and cookies, reload |
+| Ad blocker interference | Disable ad blocker or add site to allowlist |
+| Institutional firewall | Contact IT to allowlist the domain |
+| Outdated browser | Update to the latest version |
+| Network interruption | Check connection, try different network |
+
+## Still Not Working?
+
+Contact [support@anesthesiasmartsite.com](mailto:support@anesthesiasmartsite.com) with:
+- Your browser name and version
+- Your device type (desktop, mobile, tablet)
+- Whether you are on an institutional or personal network
+- Any error messages displayed (screenshot if possible)

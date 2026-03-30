@@ -27,28 +27,156 @@
                 "title": "Quickstart",
                 "path": "quickstart",
                 "icon": "zap"
+              },
+              {
+                "title": "Platform Overview",
+                "path": "platform-overview",
+                "icon": "layout"
+              },
+              {
+                "title": "Dashboard Navigation",
+                "path": "dashboard-navigation",
+                "icon": "compass"
               }
             ]
           },
           {
-            "group": "Core Concepts",
-            "icon": "layers",
+            "group": "AI in Anesthesiology",
+            "icon": "cpu",
             "pages": [
               {
-                "title": "Features",
-                "path": "features",
-                "icon": "file-text"
+                "title": "AI Resources Overview",
+                "path": "ai/overview",
+                "icon": "zap"
+              },
+              {
+                "title": "VDD Framework",
+                "path": "ai/vdd-framework",
+                "icon": "shield"
+              },
+              {
+                "title": "Beyond the Hype CME",
+                "path": "ai/beyond-the-hype",
+                "icon": "monitor"
+              },
+              {
+                "title": "AI Governance Principles",
+                "path": "ai/governance",
+                "icon": "scale"
+              },
+              {
+                "title": "Resource Guide & Articles",
+                "path": "ai/resource-guide",
+                "icon": "book-open"
+              },
+              {
+                "title": "Knowledge Quizzes",
+                "path": "ai/quizzes",
+                "icon": "help-circle"
               }
             ]
           },
           {
-            "group": "Guides",
-            "icon": "compass",
+            "group": "Clinical Protocols",
+            "icon": "clipboard-list",
             "pages": [
               {
-                "title": "AI Frameworks",
-                "path": "ai-frameworks",
+                "title": "Protocols Overview",
+                "path": "protocols/overview",
                 "icon": "file-text"
+              },
+              {
+                "title": "Awake Spine Surgery",
+                "path": "protocols/awake-spine-surgery",
+                "icon": "activity"
+              },
+              {
+                "title": "Patient Selection Criteria",
+                "path": "protocols/patient-selection",
+                "icon": "users"
+              },
+              {
+                "title": "Anesthetic Techniques",
+                "path": "protocols/anesthetic-techniques",
+                "icon": "sliders"
+              },
+              {
+                "title": "Perioperative Management",
+                "path": "protocols/perioperative-management",
+                "icon": "heart"
+              }
+            ]
+          },
+          {
+            "group": "Clinical Education",
+            "icon": "graduation-cap",
+            "pages": [
+              {
+                "title": "Education Overview",
+                "path": "education/overview",
+                "icon": "book-open"
+              },
+              {
+                "title": "CME Materials",
+                "path": "education/cme-materials",
+                "icon": "award"
+              },
+              {
+                "title": "Presentations",
+                "path": "education/presentations",
+                "icon": "monitor"
+              },
+              {
+                "title": "Earning CME Credit",
+                "path": "education/earning-cme-credit",
+                "icon": "check-square"
+              }
+            ]
+          },
+          {
+            "group": "Your Account",
+            "icon": "user",
+            "pages": [
+              {
+                "title": "Account Setup",
+                "path": "account/setup",
+                "icon": "user-plus"
+              },
+              {
+                "title": "Security & 2FA",
+                "path": "account/security",
+                "icon": "lock"
+              },
+              {
+                "title": "Profile & Preferences",
+                "path": "account/profile",
+                "icon": "settings"
+              },
+              {
+                "title": "Favorites & Bookmarks",
+                "path": "account/favorites",
+                "icon": "star"
+              },
+              {
+                "title": "Search & Filtering",
+                "path": "account/search",
+                "icon": "search"
+              }
+            ]
+          },
+          {
+            "group": "Community",
+            "icon": "users",
+            "pages": [
+              {
+                "title": "Community Forum",
+                "path": "community/forum",
+                "icon": "message-circle"
+              },
+              {
+                "title": "Contributing",
+                "path": "community/contributing",
+                "icon": "git-pull-request"
               }
             ]
           }
@@ -58,6 +186,21 @@
         "tab": "API Reference",
         "icon": "code",
         "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              {
+                "title": "API Introduction",
+                "path": "api-reference/introduction",
+                "icon": "file-text"
+              },
+              {
+                "title": "Authentication",
+                "path": "api-reference/authentication",
+                "icon": "key"
+              }
+            ]
+          },
           {
             "group": "Endpoints",
             "openapi": "api-reference/openapi.yaml"
@@ -76,33 +219,97 @@
           {
             "group": "FAQs",
             "icon": "help-circle",
-            "expandable": false,
+            "expandable": true,
             "pages": [
               {
                 "title": "Accessing Guidelines",
                 "path": "help-center/faq/accessing-guidelines"
+              },
+              {
+                "title": "Account & Login",
+                "path": "help-center/faq/account-login"
+              },
+              {
+                "title": "AI Tools & VDD Framework",
+                "path": "help-center/faq/ai-tools-vdd"
+              },
+              {
+                "title": "CME Credit & Certificates",
+                "path": "help-center/faq/cme-credit"
+              },
+              {
+                "title": "Privacy & Data Security",
+                "path": "help-center/faq/privacy-security"
+              },
+              {
+                "title": "Mobile & Browser Support",
+                "path": "help-center/faq/browser-support"
+              }
+            ]
+          },
+          {
+            "group": "How-To Guides",
+            "icon": "book-open",
+            "expandable": true,
+            "pages": [
+              {
+                "title": "Create a Favorites List",
+                "path": "help-center/guides/create-favorite-list"
+              },
+              {
+                "title": "Complete a Knowledge Quiz",
+                "path": "help-center/guides/complete-quiz"
+              },
+              {
+                "title": "Access CME Presentations",
+                "path": "help-center/guides/access-cme"
+              },
+              {
+                "title": "Use Dark Mode",
+                "path": "help-center/guides/dark-mode"
+              },
+              {
+                "title": "Navigate Protocols",
+                "path": "help-center/guides/navigate-protocols"
+              },
+              {
+                "title": "Use Search & Filters",
+                "path": "help-center/guides/search-filters"
+              },
+              {
+                "title": "Join the Community Forum",
+                "path": "help-center/guides/join-community"
+              },
+              {
+                "title": "Download the Resource Guide",
+                "path": "help-center/guides/download-resource-guide"
               }
             ]
           },
           {
             "group": "Troubleshooting",
             "icon": "alert-triangle",
-            "expandable": false,
+            "expandable": true,
             "pages": [
               {
-                "title": "Page Load Error",
+                "title": "Page Won't Load",
                 "path": "help-center/troubleshooting/page-load-error"
-              }
-            ]
-          },
-          {
-            "group": "Guides",
-            "icon": "book-open",
-            "expandable": false,
-            "pages": [
+              },
               {
-                "title": "Create Favorite List",
-                "path": "help-center/guides/create-favorite-list"
+                "title": "Login & Authentication Issues",
+                "path": "help-center/troubleshooting/login-issues"
+              },
+              {
+                "title": "Quiz Not Saving Progress",
+                "path": "help-center/troubleshooting/quiz-progress"
+              },
+              {
+                "title": "Video/Presentation Playback",
+                "path": "help-center/troubleshooting/playback-issues"
+              },
+              {
+                "title": "SSO Configuration",
+                "path": "help-center/troubleshooting/sso-configuration"
               }
             ]
           }
