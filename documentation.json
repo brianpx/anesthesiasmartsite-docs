@@ -327,5 +327,18 @@
         ]
       }
     ]
+  },
+  "title": "Anesthesia SmartSite Documentation",
+  "description": "Evidence-based anesthesiology documentation hub with AI-guided resources, clinical protocols, educational content, and practical tools for safer perioperative decision-making.",
+  "logo-dark": "https://blob-cdn.documentation.ai/org-64e67912-9670-4075-a804-30c587ee1890/doc-12aa4579-9fc8-4a49-911d-1cc1ca7f9564/1774885683382-965bmv8lis5-logo-icon.png?q=85&fm=auto&auto=compress%2Cformat",
+  "logo-light": "https://blob-cdn.documentation.ai/org-64e67912-9670-4075-a804-30c587ee1890/doc-12aa4579-9fc8-4a49-911d-1cc1ca7f9564/1774885683382-965bmv8lis5-logo-icon.png?q=85&fm=auto&auto=compress%2Cformat",
+  "favicon": "https://blob-cdn.documentation.ai/org-64e67912-9670-4075-a804-30c587ee1890/doc-12aa4579-9fc8-4a49-911d-1cc1ca7f9564/1774885683382-965bmv8lis5-logo-icon.png?q=85&fm=auto&auto=compress%2Cformat",
+  "navbar": {
+    "actions": {
+      "primary": {
+        "title": "Anesthesia SmartSite Home",
+        "link": "https://anesthesiasmartsite.com"
+      }
+    }
   }
 }
