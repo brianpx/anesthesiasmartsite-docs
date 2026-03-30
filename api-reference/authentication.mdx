@@ -1,0 +1,83 @@
+---
+title: API Authentication
+description: How to obtain API keys, authenticate requests, manage tokens, and configure OAuth for the Anesthesia SmartSite API.
+---
+
+## Overview
+
+The Anesthesia SmartSite API uses bearer token authentication. Every API request must include a valid API key in the `Authorization` header.
+
+## Obtaining an API Key
+
+<Steps>
+  <Step title="Log In to Your Account" icon="user">
+    Sign in at [app.anesthesiasmartsite.com/login](https://app.anesthesiasmartsite.com/login) with an account that has API access permissions.
+  </Step>
+  <Step title="Navigate to API Settings" icon="settings">
+    Go to **Profile > API Settings** or contact your institution's administrator to request API access.
+  </Step>
+  <Step title="Generate a New Key" icon="key">
+    Select **Generate API Key**. Provide a descriptive name for the key (e.g., "EHR Integration - Production"). The key is displayed once — copy and store it securely.
+  </Step>
+</Steps>
+
+<Callout kind="warning">
+  API keys are displayed only once at creation. Store them securely in your institution's secrets manager or vault. Never embed API keys in client-side code, public repositories, or unencrypted configuration files.
+</Callout>
+
+## Using the API Key
+
+Include the key in the `Authorization` header of every request:
+
+```bash
+curl -X GET "https://api.anesthesiasmartsite.com/v1/patients" \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Accept: application/json"
+```
+
+## Key Management
+
+| Action | How |
+|--------|-----|
+| **Rotate a key** | Generate a new key, update your integration, then revoke the old key |
+| **Revoke a key** | Navigate to API Settings, find the key, and select **Revoke** |
+| **View active keys** | API Settings shows all active keys with creation date and last-used timestamp |
+
+<Callout kind="tip">
+  Rotate API keys regularly per your institution's security policy. Keys that have not been used in 90 days should be reviewed and revoked if no longer needed.
+</Callout>
+
+## Permissions and Scopes
+
+API keys can be scoped to specific permissions:
+
+| Scope | Access Level |
+|-------|-------------|
+| `patients:read` | Read patient records |
+| `patients:write` | Create and update patient records |
+| `records:read` | Read medical records |
+| `records:write` | Create and update medical records |
+| `resources:read` | Access clinical resources and protocols |
+
+Request only the scopes your integration requires. Scopes are configured at key creation time.
+
+## Error Responses
+
+Authentication errors return standard HTTP status codes:
+
+| Code | Meaning | Action |
+|------|---------|--------|
+| 401 | Missing or invalid API key | Check the `Authorization` header format and key value |
+| 403 | Key lacks required scope | Request additional scopes or generate a new key with the correct permissions |
+
+## Security Best Practices
+
+- Store API keys in environment variables or a secrets manager — never in source code
+- Use separate keys for development and production environments
+- Monitor the "last used" timestamp on your keys to detect unauthorized usage
+- Revoke keys immediately if you suspect they have been compromised
+- Use the minimum required scopes for each integration
+
+## Next Steps
+
+Review the available [API Endpoints](/api-reference/openapi.yaml) to start building your integration.

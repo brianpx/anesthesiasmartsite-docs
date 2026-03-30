@@ -1,0 +1,112 @@
+---
+title: API Introduction
+description: Overview of the Anesthesia SmartSite API, including base URL, versioning, authentication, rate limits, and response formats.
+---
+
+## Overview
+
+The Anesthesia SmartSite API provides programmatic access to platform resources for institutional integrations. Use the API to manage patient records, access clinical resources, and integrate platform functionality into your health system's workflows.
+
+<Callout kind="warning">
+  The API is intended for institutional integration by authorized developers. All API access must comply with your institution's data governance and security policies.
+</Callout>
+
+## Base URL
+
+All API requests use the following base URL:
+
+```
+https://api.anesthesiasmartsite.com/v1
+```
+
+## Authentication
+
+The API uses bearer token authentication. Include your API key in the `Authorization` header of every request:
+
+```
+Authorization: Bearer YOUR_API_KEY
+```
+
+See [Authentication](/api-reference/authentication) for details on obtaining and managing API keys.
+
+## Request Format
+
+- **Content-Type:** `application/json` for request bodies
+- **Accept:** `application/json` for responses
+- **HTTP Methods:** `GET` for retrieval, `POST` for creation, `PUT` for updates, `DELETE` for removal
+
+## Response Format
+
+All responses return JSON with a consistent structure:
+
+```json
+{
+  "data": { },
+  "meta": {
+    "page": 1,
+    "limit": 20,
+    "total": 150
+  }
+}
+```
+
+### Error Responses
+
+Errors follow a standard format with an HTTP status code and descriptive message:
+
+```json
+{
+  "error": {
+    "code": 400,
+    "message": "Invalid patient ID format"
+  }
+}
+```
+
+| Status Code | Meaning |
+|-------------|---------|
+| 200 | Success |
+| 201 | Created |
+| 400 | Bad Request — invalid parameters |
+| 401 | Unauthorized — missing or invalid API key |
+| 403 | Forbidden — insufficient permissions |
+| 404 | Not Found — resource does not exist |
+| 429 | Too Many Requests — rate limit exceeded |
+| 500 | Internal Server Error |
+
+## Rate Limits
+
+API requests are rate-limited per API key:
+
+| Tier | Requests per Minute |
+|------|---------------------|
+| Standard | 60 |
+| Institutional | 300 |
+
+Rate limit headers are included in every response:
+- `X-RateLimit-Limit` — Maximum requests per window
+- `X-RateLimit-Remaining` — Remaining requests in the current window
+- `X-RateLimit-Reset` — Timestamp when the window resets
+
+## Versioning
+
+The API uses URL-based versioning. The current version is `v1`. Breaking changes are introduced in new versions; existing versions continue to function during a documented deprecation period.
+
+## Pagination
+
+List endpoints support pagination through query parameters:
+
+| Parameter | Default | Description |
+|-----------|---------|-------------|
+| `page` | 1 | Page number |
+| `limit` | 20 | Items per page (max 100) |
+
+Pagination metadata is included in the `meta` object of list responses.
+
+## Next Steps
+
+<Columns cols={2}>
+  <Card title="Authentication" icon="key" href="/api-reference/authentication" horizontal>
+    Obtain API keys and configure authentication.
+  </Card>
+</Columns>

@@ -1,0 +1,80 @@
+---
+title: Security & 2FA
+description: Configure two-factor authentication, manage password settings, and review security best practices for your Anesthesia SmartSite account.
+---
+
+## Overview
+
+Anesthesia SmartSite supports multiple layers of account security to protect your professional data and activity. Two-factor authentication (2FA) is strongly recommended for all accounts.
+
+## Two-Factor Authentication (2FA)
+
+2FA adds a second verification step to your login, requiring both your password and a time-based code from an authenticator app.
+
+### Setting Up 2FA
+
+<Steps>
+  <Step title="Open Security Settings" icon="settings">
+    Navigate to your profile and select **Security Settings** or access it from the account menu.
+  </Step>
+  <Step title="Enable 2FA" icon="lock">
+    Select **Enable Two-Factor Authentication**. A QR code will be displayed.
+  </Step>
+  <Step title="Scan the QR Code" icon="smartphone">
+    Open your authenticator app (Google Authenticator, Authy, Microsoft Authenticator, or similar) and scan the QR code.
+  </Step>
+  <Step title="Enter Verification Code" icon="check-circle">
+    Enter the 6-digit code from your authenticator app to confirm setup.
+  </Step>
+  <Step title="Save Recovery Codes" icon="download">
+    Download or record your recovery codes in a secure location. These codes allow account access if you lose your authenticator device.
+
+    <Callout kind="warning">
+      Store recovery codes securely and separately from your primary device. If you lose both your authenticator and recovery codes, you will need to contact support for account recovery.
+    </Callout>
+  </Step>
+</Steps>
+
+## Password Requirements
+
+- Minimum 12 characters
+- Must include uppercase and lowercase letters, numbers, and symbols
+- Cannot reuse your last 5 passwords
+- Change your password from **Security Settings** in your profile
+
+### Resetting Your Password
+
+1. Navigate to the login page at [app.anesthesiasmartsite.com/login](https://app.anesthesiasmartsite.com/login)
+2. Select **Forgot Password**
+3. Enter your registered email address
+4. Follow the reset link in your email to create a new password
+
+For password reset issues, see [Login & Authentication Issues](/help-center/troubleshooting/login-issues).
+
+## Session Management
+
+- Sessions expire after a configurable period of inactivity
+- Active sessions are visible in your Security Settings
+- You can terminate individual sessions or sign out of all devices
+- SSO sessions follow your institution's session policies
+
+## Security Best Practices
+
+| Practice | Recommendation |
+|----------|---------------|
+| 2FA | Enable for all accounts, especially those with CME credit data |
+| Password | Use a unique password not shared with other services |
+| Shared devices | Always log out when using shared or public computers |
+| Recovery codes | Store in a password manager or secure physical location |
+| Suspicious activity | Report unrecognized sessions to [support@anesthesiasmartsite.com](mailto:support@anesthesiasmartsite.com) |
+
+## Next Steps
+
+<Columns cols={2}>
+  <Card title="Profile & Preferences" icon="settings" href="/account/profile" horizontal>
+    Customize your profile and notification settings.
+  </Card>
+  <Card title="Account Setup" icon="user-plus" href="/account/setup" horizontal>
+    Complete your professional profile if you haven't already.
+  </Card>
+</Columns>

@@ -1,0 +1,108 @@
+---
+title: AI Governance Principles
+description: Institutional frameworks for ethical oversight, transparency, and continuous audit of AI tools in anesthesiology practice.
+---
+
+## Overview
+
+Responsible AI integration in anesthesiology requires more than individual clinician awareness — it requires institutional governance. These principles provide a framework for evaluating, deploying, and monitoring AI tools within your department or health system.
+
+<Callout kind="info">
+  These governance principles complement the [VDD Framework](/ai/vdd-framework). VDD guides individual clinical decisions; governance structures guide institutional AI policy.
+</Callout>
+
+## Four Pillars of AI Governance
+
+<Columns cols={2}>
+  <Card title="Ethical Oversight" icon="shield">
+    Establish review boards or committees responsible for evaluating AI tools before clinical deployment. Review should assess clinical validity, bias potential, data privacy, and alignment with institutional values.
+  </Card>
+  <Card title="Transparency" icon="eye">
+    Require disclosure of AI assistance in all clinical documentation. Clinicians, patients, and quality review teams should be able to identify when and how AI influenced clinical decisions.
+  </Card>
+  <Card title="Continuous Audit" icon="trending-up">
+    Monitor AI tool performance through regular outcome reviews. Track concordance between AI recommendations and clinical decisions, and measure patient outcomes associated with AI-influenced care.
+  </Card>
+  <Card title="Training" icon="book-open">
+    Train all clinical staff on the VDD framework, AI limitations, and institutional AI policies. New hires should complete AI governance training before using AI-assisted tools in clinical settings.
+  </Card>
+</Columns>
+
+## Building an AI Review Board
+
+An effective AI review board evaluates AI tools at three stages: pre-deployment, active use, and retirement.
+
+<Steps>
+  <Step title="Pre-Deployment Review" icon="search">
+    Before any AI tool enters clinical use, the review board should assess:
+
+    - **Clinical evidence** — Published validation studies in relevant patient populations
+    - **Bias assessment** — Performance across demographic groups and clinical scenarios
+    - **Data governance** — How patient data is collected, stored, processed, and shared
+    - **Integration impact** — How the tool fits into existing clinical workflows
+    - **Failure modes** — What happens when the AI produces incorrect or unavailable outputs
+  </Step>
+  <Step title="Active Monitoring" icon="activity">
+    During clinical use, the board should oversee:
+
+    - Regular performance metrics against established benchmarks
+    - Incident reporting for AI-related clinical events
+    - Clinician feedback on usability, accuracy, and workflow impact
+    - Compliance with documentation and VDD requirements
+  </Step>
+  <Step title="Retirement Criteria" icon="alert-triangle">
+    Define clear criteria for removing an AI tool from clinical use:
+
+    - Performance falls below established accuracy thresholds
+    - Systematic bias is identified that cannot be corrected
+    - The vendor can no longer guarantee data governance standards
+    - Superior alternatives become available with better evidence
+  </Step>
+</Steps>
+
+## Transparency in Clinical Documentation
+
+When AI tools inform clinical decisions, documentation should include:
+
+| Element | Example |
+|---------|---------|
+| AI tool identified | "AI-assisted dosage calculator (v2.1) consulted" |
+| Recommendation stated | "Suggested propofol induction dose: 2 mg/kg" |
+| Verification performed | "Verified against ASA guidelines and patient BMI/age" |
+| Clinical decision | "Dose adjusted to 1.5 mg/kg due to patient age (78 years)" |
+| Rationale documented | "Reduced dose per geriatric dosing recommendations" |
+
+## Audit and Quality Improvement
+
+Establish a regular audit cycle to evaluate AI tool performance:
+
+- **Monthly:** Review incident reports and clinician feedback
+- **Quarterly:** Analyze concordance rates (how often clinicians agree with AI recommendations)
+- **Annually:** Comprehensive performance review against clinical outcomes data
+- **Ad hoc:** Triggered by sentinel events or significant software updates
+
+<Callout kind="warning">
+  AI tool updates and version changes can alter recommendation patterns. Re-evaluate performance after every significant software update from the vendor.
+</Callout>
+
+## Training Requirements
+
+All clinicians using AI-assisted tools should complete:
+
+1. **VDD Framework training** — Understanding the Verify-Decide-Document methodology ([VDD Framework guide](/ai/vdd-framework))
+2. **Tool-specific orientation** — Hands-on training with each AI tool used in clinical practice
+3. **Documentation standards** — How to record AI use in clinical notes per institutional policy
+4. **Annual refresher** — Updated training incorporating lessons learned from audits and incidents
+
+The [Beyond the Hype CME](/ai/beyond-the-hype) presentation provides a foundation for governance awareness.
+
+## Next Steps
+
+<Columns cols={2}>
+  <Card title="Resource Guide" icon="book-open" href="/ai/resource-guide" horizontal>
+    Access curated articles on clinical AI governance and implementation.
+  </Card>
+  <Card title="Knowledge Quizzes" icon="help-circle" href="/ai/quizzes" horizontal>
+    Assess your understanding of AI governance and the VDD framework.
+  </Card>
+</Columns>

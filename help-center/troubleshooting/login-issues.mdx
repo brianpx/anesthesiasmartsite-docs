@@ -1,0 +1,56 @@
+---
+title: Login & Authentication Issues
+description: Troubleshoot common login problems including password reset failures, SSO errors, 2FA lockout, and account locked states on Anesthesia SmartSite.
+---
+
+## Password Reset Not Working
+
+<Steps>
+  <Step title="Check Your Email" icon="mail">
+    The reset email may take a few minutes. Check your spam or junk folder. Search for emails from Anesthesia SmartSite.
+  </Step>
+  <Step title="Verify the Email Address" icon="check-circle">
+    Confirm you are entering the same email address you registered with. If you used SSO, your account may be linked to your institutional email.
+  </Step>
+  <Step title="Try Again" icon="refresh-cw">
+    Request a new reset link. Previous links expire after a limited time. Use the most recent link only.
+  </Step>
+  <Step title="Contact Support" icon="mail">
+    If the reset email still does not arrive, contact [support@anesthesiasmartsite.com](mailto:support@anesthesiasmartsite.com) with your registered email address.
+  </Step>
+</Steps>
+
+## SSO Login Errors
+
+If SSO login fails:
+
+1. **Confirm your institution supports SSO** — Check with your IT department that Anesthesia SmartSite SSO is configured
+2. **Try a different browser** — Some institutional SSO configurations have browser-specific issues
+3. **Clear cookies** — Stale SSO session cookies can cause authentication loops
+4. **Check institutional network** — Some SSO providers require you to be on the institutional network or VPN
+
+For institutional SSO setup, see [SSO Configuration](/help-center/troubleshooting/sso-configuration).
+
+## 2FA Lockout
+
+If you cannot access your authenticator app:
+
+1. Use one of your **recovery codes** (saved during 2FA setup) to log in
+2. After logging in with a recovery code, disable and re-enable 2FA with your current authenticator
+3. If you have no recovery codes available, contact [support@anesthesiasmartsite.com](mailto:support@anesthesiasmartsite.com) for account recovery (identity verification required)
+
+<Callout kind="warning">
+  Account recovery without 2FA codes requires identity verification and may take 24-48 hours. Store your recovery codes in a secure location to avoid this process.
+</Callout>
+
+## Account Locked
+
+Accounts may be temporarily locked after multiple failed login attempts. Wait 15 minutes and try again, or reset your password. If the lock persists, contact [support@anesthesiasmartsite.com](mailto:support@anesthesiasmartsite.com).
+
+## Still Having Issues?
+
+Contact [support@anesthesiasmartsite.com](mailto:support@anesthesiasmartsite.com) with:
+- Your registered email address
+- The error message you see (screenshot if possible)
+- The login method you are using (email/password or SSO)
+- Your browser and device information

@@ -1,0 +1,53 @@
+---
+title: SSO Configuration
+description: Troubleshoot Single Sign-On (SSO) setup and login issues for institutional access to Anesthesia SmartSite.
+---
+
+## SSO Login Not Working
+
+If you cannot log in via your institution's SSO:
+
+<Steps>
+  <Step title="Verify SSO Is Configured" icon="check-circle">
+    Confirm with your IT department that Anesthesia SmartSite SSO integration has been set up for your institution. SSO is not enabled by default — your institution must configure it.
+  </Step>
+  <Step title="Use the Correct Login Method" icon="shield">
+    On the login page, select **Login with SSO** and choose your institution's identity provider. Do not enter your institutional credentials in the standard email/password fields.
+  </Step>
+  <Step title="Clear Browser Data" icon="trash">
+    Clear cookies and cached data for both the Anesthesia SmartSite domain and your identity provider domain. Stale session cookies can cause authentication loops.
+  </Step>
+  <Step title="Check Network Requirements" icon="wifi">
+    Some SSO providers require you to be on the institutional network or VPN. Try connecting through your institution's network if you are working remotely.
+  </Step>
+</Steps>
+
+## Supported SSO Providers
+
+Anesthesia SmartSite supports SSO through:
+
+| Provider Type | Examples |
+|---------------|----------|
+| Google Workspace | Institutional Google accounts |
+| SAML 2.0 | Hospital identity providers, Okta, Azure AD, OneLogin |
+
+## For IT Administrators
+
+If you are setting up SSO for your institution:
+
+1. Contact [support@anesthesiasmartsite.com](mailto:support@anesthesiasmartsite.com) with the subject line "SSO Configuration Request"
+2. Include your institution name and preferred identity provider
+3. The Anesthesia SmartSite team will provide the SAML metadata and configuration endpoints
+4. After configuration, test with a pilot group before rolling out to all users
+
+<Callout kind="info">
+  SSO configuration requires coordination between your IT department and the Anesthesia SmartSite team. Allow 1-2 business days for initial setup and testing.
+</Callout>
+
+## Still Having Issues?
+
+Contact [support@anesthesiasmartsite.com](mailto:support@anesthesiasmartsite.com) with:
+- Your institution name
+- The identity provider being used
+- The error message displayed during login
+- Whether the issue affects all users or specific accounts
